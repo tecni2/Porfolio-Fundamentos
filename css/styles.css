@@ -56,7 +56,7 @@ h1 {
 }
 
 h2 {
-  margin: 15px 0;
+margin: 15px 0;
 color: var(--segundo);
 font-size: 50px;
 font-weight: 600;
@@ -76,7 +76,6 @@ font-weight: 600;
 }
 
 nav {
-  /* border: solid 1px rebeccapurple; */
   display: flex;
   justify-content: space-evenly;
   margin: 0px auto;
@@ -103,9 +102,6 @@ nav {
   }
 } 
 
-nav .active {
-  color: var(--principal);
-}
 
 .icon-nav-mobile {
   display: none;
@@ -114,7 +110,7 @@ nav .active {
 @media (max-width: 650px) {
   nav {
     justify-content: flex-end;
-   
+    
   }
   .icon-nav-mobile {
     display: flex;
@@ -146,6 +142,9 @@ nav a:hover {
   color: var(--principal);
 }
 
+nav .active {
+  color: var(--principal);
+}
 /* MEDIAS QUERY NAV */
 
 @media (max-width: 850px) {
