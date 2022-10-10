@@ -71,20 +71,21 @@ font-weight: 600;
 
 /* SECCIÓN NAV */
 
-.logo {
+.logo img {
+  position: absolute;
+  left: 65px;
   margin-top: 40px;
 }
 
 nav {
+  height: 200px;
   display: flex;
   justify-content: space-evenly;
-  margin: 0px auto;
-  width: 100%;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 800px) {
   nav {
-    border: solid 2px darkcyan;
     height: 140px;
     padding-bottom: 1px;
   
@@ -117,9 +118,8 @@ nav {
 
   .image-mobile {
     display: flex;
-    background-color: #FF4F6F;
   }
-  /* aqui */
+
   .image-web {
     display: none;
   }
@@ -138,19 +138,20 @@ nav {
   }
 } 
 
-
-
 .nav-menu {
+  margin-left: 60px;
   margin-top: 50px;
   display: flex;
-  flex-direction: row; 
-  justify-content: space-around; 
-  width: 75%;
+  justify-content: space-between; 
+  width: 60%;
+  height: 80px;
 }
 
 nav a {
   color: var(--tercero);
   text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -162,30 +163,39 @@ nav .active {
 }
 /* MEDIAS QUERY NAV */
 
+@media (max-width: 1000px) {
+  .nav-menu {
+    margin-left: 70px;
+    /* margin-top: 30px; */
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+} 
+
 @media (max-width: 850px) {
   .nav-menu {
-    margin-top: 25px;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-    gap: 10px;
+    margin-left: 80px;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    gap: 20px; 
+    width: 55%;
   }
   
   .logo img {
-    margin-top: -20px;
     width: 150px;
-    /* height: 170px; */
+    left: 35px;
   }
 } 
 
 @media (max-width: 650px) {
 
-  .logo img {
-    width: 120px;
-    position: absolute;
-    left: 15px;
-  }
   .nav-menu {
     display: none;
+  }
+  .logo img {
+    top: -15px;
+    width: 120px;
+    left: 15px;
   }
 } 
 
@@ -194,7 +204,8 @@ nav .active {
     height: 60px;
   }
   .logo img {
-    width: 70px;
+    top: -20px;
+    width: 75px;
   }
 } 
 
@@ -202,8 +213,7 @@ nav .active {
 
 .header-contenedor {
   margin-top: 80px;
-  /* border: solid 1px var(--tercero); */
-  width: 100%;
+  width: 95vw;
   /* height: 715px; */
   display: flex;
   justify-content: space-between;
@@ -323,7 +333,7 @@ nav .active {
 .button-contactame {
   margin-top: 86px;
   background-color: #FF4F6F;
-  width: 490px;
+  width: 400px;
   height: 107px;
   border-radius: 0 50px 50px 0px;
   display: flex;
@@ -367,7 +377,6 @@ nav .active {
 }
 
 
-
 /* SECCIÓN HABILIDADES */
 
 .frontendskills {
@@ -377,14 +386,12 @@ nav .active {
 
 .container-skill {
   margin-top: 80px;
-  /* border: solid 2px rebeccapurple; */
   height: 280px;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 .skill {
-  /* border: solid 2px rgb(51, 92, 153); */
   width: 225px;
   height: 220px;
 }
@@ -398,7 +405,6 @@ nav .active {
 
 .skill .average {
   margin-top: -30px;
-  /* border: solid 2px rebeccapurple; */
   color: var(--principal);
   font-size: 50px;
   font-weight: 600;
