@@ -100,6 +100,7 @@ nav {
 @media (max-width: 440px) {
   nav {
     height: 90px;
+    margin-bottom: 5px;
   }
 } 
 
@@ -266,10 +267,7 @@ nav .active {
   position: absolute;
   bottom: 0px;
   right: 40px;
-  /* margin-right: 20px; */
-  /* width: 75%; */
   min-width: 300px;
-  /* width: 560px; */
   height: 115%;
 }
 
@@ -282,7 +280,6 @@ nav .active {
 }
 
 /* MEDIAS QUERY HEADER */
-
 
 
 .header-description {
@@ -315,12 +312,6 @@ nav .active {
 .header-icono {
   border-radius: 50%;
   border: solid 2px var(--principal);
- /* font-size: 24px; */
- /* font-weight: 24px; */
- /* margin: 0 auto;  */
- /* width: 50px;  */
- /* height: 50px;  */
- /* text-align: center; */
  padding: 17px 15px 15px 18px;
  width: 80px;
  height: 80px;
@@ -348,12 +339,33 @@ nav .active {
   }
 } 
 
+@media (max-width: 650px) {
+  .button-contactame {
+    width: 350px;
+    height: 60px;
+    }
+    .header-icono {
+    font-size: 24px;
+     padding: 8px 45px 45px 8px;
+     width: 40px;
+     height: 40px;
+    }
+
+  }
+
+
 .button-contactame  p {
   margin-top: 37px;
   font-size: 30px;
   color: var(--body-principal);
-
  } 
+
+ @media (max-width: 650px) {
+  .button-contactame p {
+    height: 60px;
+    margin-top: 12px;
+    }
+  }
 
  .contactame-icono {
   width: 40px;
@@ -380,6 +392,7 @@ nav .active {
 /* SECCIÓN HABILIDADES */
 
 .frontendskills {
+  overflow: scroll;
   margin: 80px auto -5px;
   width: 80%;
 }
@@ -417,11 +430,33 @@ nav .active {
   font-weight: 600;
 }
 
+.arrow-icon {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .arrow-icon{
+    display: block;
+    
+  }
+  .arrow-icon img {
+    position: absolute;
+    right: 5px;
+    top: -230px;
+    
+    border-radius: 50%;
+    width: 50px;
+    background-color: var(--segundo);
+  }
+} 
+
+
 
 /* SECCIÓN ACERCA DE MÍ */
 .about-me{
+  overflow: hidden;
   position: relative;
- 
 }
 
 .about-icon {
@@ -477,7 +512,6 @@ nav .active {
 /* SECCIÓN SERVICIOS */
 
 .services{
-  /* border: solid 2px rgb(8, 114, 114); */
   margin: 40px auto;
   width: 80%;
  } 
@@ -533,7 +567,8 @@ nav .active {
 
 /* SECCIÓN PORTAFOLIO */
 
-.porfolio{
+.porfolio {
+  overflow: scroll;
   margin: 40px auto;
   width: 80%;
 }
@@ -568,8 +603,33 @@ nav .active {
   color: var(--tercero);
   margin-top: 7px;
   padding-left: 10px;
-  /* padding-bottom: 15px; */
 }
+
+/* FLECHA */
+
+.arrow-icon-porfolio {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .arrow-icon-porfolio{
+    display: block;
+    
+  }
+  .arrow-icon-porfolio img {
+    position: absolute;
+    right: 30px;
+    top: -200px;
+    
+    border-radius: 50%;
+    width: 50px;
+    background-color: var(--segundo);
+  }
+} 
+
+
+
 
 /* sección de contacto */
 .contacto {
@@ -585,13 +645,6 @@ nav .active {
   justify-content: space-between;
   text-align: center;
 }
-
-/* Eliminado por pruebas */
-/* .container-icons{ */
-/* width: 150px; */
-/* text-align: center; */
-/* border: solid 1px red; */
-/* } */
 
 .container-icons object {
   width: 100px;
