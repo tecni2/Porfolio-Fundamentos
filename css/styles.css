@@ -240,9 +240,7 @@ nav .active {
 
 @media (max-width: 480px) {
   
-  .header-contenedor {
-    overflow: hidden;
-  }
+  .header-contenedor { overflow: hidden; }
 
   .header-background {
     position: relative;
@@ -252,7 +250,6 @@ nav .active {
    border-radius: 0;
   } 
 }
-
 
 .header-image {
   text-align: right;
@@ -280,7 +277,6 @@ nav .active {
 .header-description {
   position: relative;
   bottom: 75px;
-  /* left: 25px; */
   width: 48vw;
   min-width: 300px;
 }
@@ -345,7 +341,6 @@ nav .active {
      width: 40px;
      height: 40px;
     }
-
   }
 
 .button-contactame  p {
@@ -388,7 +383,7 @@ nav .active {
 
 .frontendskills {
   position: relative;
-  /* border: solid 2px red; Pruebas */
+
   margin: 80px auto -5px;
   width: 80%;
 }
@@ -425,10 +420,8 @@ nav .active {
   font-weight: 600;
 }
 
-/*Pruebas*/
 @media (max-width: 850px) {
   .container-skill { 
-    /* background-color: #ff4f6f96; */
     overflow: scroll;
     width: 100%;
     gap: 30px;
@@ -437,7 +430,7 @@ nav .active {
     font-size: 18px;
     font-weight: 600;
   }
-  /*Pruebas*/
+
   .average {
     font-size: 32px;
     font-weight: 600;
@@ -468,10 +461,6 @@ nav .active {
 * SECCIÓN ACERCA DE MÍ 
 */
 .about-me{ position: relative; }
-
-@media (max-width: 650px){
-  .about-me{ overflow: hidden; } 
-}
 
 
 .about-icon {
@@ -506,6 +495,23 @@ nav .active {
   height: 208px;
 }
 
+@media (max-width: 650px){
+  .container-card { flex-wrap: wrap-reverse; } 
+  .about-icon object { width: 175px; }
+
+  .container-about-me p { 
+    font-size: 16px; 
+    line-height: 30px;
+  } 
+
+  .card-card{
+    width: 120px;
+    height: 120px;
+  }
+  .card p { font-size: 12px; }
+  .card h3 { font-size: 12px; }
+}
+
 .card img{ width: 100%; }
 
 .card h3 {
@@ -534,7 +540,6 @@ nav .active {
   width: 96%;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   text-align: center;
 }
 
@@ -557,11 +562,6 @@ nav .active {
 .services-card p {
   color: var(--cuarto);
 }
-
-
-/**
-* MEDIAS QUERY SERVICIOS
-*/
 
 @media (max-width: 850px) {
   .container-services-card { flex-wrap: wrap; }
