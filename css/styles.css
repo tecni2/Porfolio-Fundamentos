@@ -244,7 +244,6 @@ nav .active {
 
   .header-background {
     position: relative;
-   /* width: 95vw; */
    left: 25px;
    height: 55vh;
    border-radius: 0;
@@ -563,12 +562,20 @@ nav .active {
   color: var(--cuarto);
 }
 
+.services-title-mobile {
+  display: none;
+}
+
 @media (max-width: 850px) {
   .container-services-card { flex-wrap: wrap; }
 } 
 
 @media (max-width: 650px) {
   .container-services-card { justify-content: center; }
+  .services-title-web { display: none;}
+  .services-title-mobile { display: block; }
+  .services-card h3 { padding-top: 36px; }
+
 } 
 
 
