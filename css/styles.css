@@ -450,11 +450,11 @@ nav .active {
   .arrow-icon{
     position: absolute;
     display: block;
-    background-color: var(--segundo);
+    background-color: var(--segundo); 
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    right: 5px;
+    right: -15px;
     bottom: 160px;
   }
 
