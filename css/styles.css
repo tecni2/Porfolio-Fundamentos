@@ -589,19 +589,14 @@ nav .active {
 }
 
 .container-img {
+  overflow-x: auto;
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width: 650px){
-  .container-img{ 
-    overflow: scroll; 
-    gap: 30px;
-  } 
+  gap: 20px;
 }
 
 .slider {
-  width: 253px;
+  width: 230px;
   height: 250px;
   border-radius: 0px 0px 4PX 4PX;
   -webkit-box-shadow: 0px 0px 7px 6px rgba(229,229,229,0.78);
@@ -611,7 +606,7 @@ nav .active {
 
 .slider img {
   border-radius: 4px 4px 0 0;
-  width: 253px;
+  width: 230px;
   height: 183px;
 }
 
@@ -632,7 +627,7 @@ nav .active {
   display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1200px) {
   .arrow-icon-porfolio{
     display: block;
    
@@ -665,8 +660,23 @@ nav .active {
   text-align: center;
 }
 
+@media (max-width: 650px) {
+  .container-svg{
+   flex-wrap: wrap;
+   gap: 60px;
+   height: auto;
+  }
+}
+
 .container-icons object {
   width: 100px;
+}
+
+@media (max-width: 850px) {
+  .container-icons object {
+    width: 80px;
+
+  }
 }
 
 .description {
