@@ -690,8 +690,11 @@ nav .active {
 footer {
   margin-top: 40px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   height: 120px;
+
 }
 
 footer p { color: var(--principal); }
