@@ -588,13 +588,16 @@ nav .active {
   width: 80%;
 }
 
-@media (max-width: 650px){
-  .porfolio{ overflow: scroll; } 
-}
-
 .container-img {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 650px){
+  .container-img{ 
+    overflow: scroll; 
+    gap: 30px;
+  } 
 }
 
 .slider {
@@ -632,15 +635,14 @@ nav .active {
 @media (max-width: 650px) {
   .arrow-icon-porfolio{
     display: block;
-    
+   
   }
   .arrow-icon-porfolio img {
     position: absolute;
     right: 30px;
-    top: -200px;
-    
+    top: -185px;
+    width: 45px;
     border-radius: 50%;
-    width: 50px;
     background-color: var(--segundo);
   }
 } 
